@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="compactDisc" class="music.BlankDisc">
-        <constructor-arg value="See you again"/>
-        <constructor-arg value="pierce"/>
+    <!--<bean id="compactDisc" class="music.BlankDisc">-->
+        <!--<constructor-arg value="See you again"/>-->
+        <!--<constructor-arg value="pierce"/>-->
+        <!--<constructor-arg>-->
+            <!--<list>-->
+                <!--<value>aa</value>-->
+                <!--<value>bb</value>-->
+                <!--<value>cc</value>-->
+            <!--</list>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+
+    <bean id="compactDisc"
+          class="music.BlankDisc"
+          c:_0="See you again"
+          c:_1="pierce">
         <constructor-arg>
             <list>
                 <value>aa</value>
