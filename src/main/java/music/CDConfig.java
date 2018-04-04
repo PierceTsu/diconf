@@ -15,6 +15,6 @@ public class CDConfig {
 
     @Bean
     public CompactDisc compactDisc() {
-        return new BlankDisc();
+        return new BlackDisc();
     }
 }

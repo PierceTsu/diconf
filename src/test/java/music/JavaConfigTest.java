@@ -31,6 +31,12 @@ public class JavaConfigTest {
     @Test
     public void play() {
         player.play();
-        assertEquals("blank disc play", log.getLog());
+        assertEquals(
+                "playing See you again by pierce\r\n" +
+                "-Track: aa\r\n" +
+                "-Track: bb\r\n" +
+                "-Track: cc\r\n",
+                log.getLog()
+        );
     }
 }
