@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import;
  * @Create Date: 2018-04-04 14:40
  */
 @Configuration
-@Import(CDConfig.class)
+//@Import(CDConfig.class)
 public class CDPlayerConfig {
 
     @Bean

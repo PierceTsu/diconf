@@ -18,7 +18,8 @@ import static org.junit.Assert.assertEquals;
  * @Create Date: 2018-04-04 14:42
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = CDPlayerConfig.class)
+//@ContextConfiguration(classes = CDPlayerConfig.class)
+@ContextConfiguration(classes = MusicConfig.class)
 public class JavaConfigTest {
 
     @Rule
