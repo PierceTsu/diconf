@@ -30,4 +30,8 @@ public class BlankDisc implements CompactDisc {
             System.out.println("-Track: " + track);
         }
     }
+
+    public void playTrack(int track) {
+
+    }
 }
