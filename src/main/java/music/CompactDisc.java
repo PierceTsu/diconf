@@ -10,4 +10,6 @@ package music;
 public interface CompactDisc {
 
     void play();
+
+    void playTrack(int tracks);
 }

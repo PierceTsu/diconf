@@ -19,7 +19,7 @@ public class TrackCounter {
 
     private Map<Integer, Integer> trackCounts = new HashMap<Integer, Integer>();
 
-    @Pointcut("execution(* music.BlankDisc.playTrack(int)) && args(trackNumber)")
+    @Pointcut("execution(* music.BlackDisc.playTrack(int)) && args(trackNumber)")
     public void trackPlayed(int trackNumber) {}
 
     @Before("trackPlayed(trackNumber)")
@@ -28,7 +28,7 @@ public class TrackCounter {
         trackCounts.put(trackNumber, currentCount + 1);
     }
 
-    private int getPlayCount(int trackNumber) {
+    public int getPlayCount(int trackNumber) {
         return trackCounts.getOrDefault(trackNumber, 0);
     }
 }
